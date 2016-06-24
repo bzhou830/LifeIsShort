@@ -1,7 +1,12 @@
 #!/usr/bin/env python
 # coding=utf-8
+
+from mpl_toolkits.mplot3d import Axes3D
+from matplotlib import cm
+from matplotlib.ticker import LinearLocator, FormatStrFormatter
 import numpy as np
 import matplotlib.pyplot as plt
+
 
 '''
 xData = np.arange(0, 10, 1)
@@ -34,4 +39,22 @@ plt.axes(aspect=1)
 plt.title('Plot 3', size=14)
 plt.pie(data, labels=('Group 1', 'Group 2', 'Group 3', 'Group 4', 'Group 5'))
 plt.savefig('plot3.png', format='png')
+
+
+
+fg = plt.figure()
+ax = fg.gca(projection='3d')
+x = np.arange(-5,5,0.25)
+y = np.arange(-5,5,0.25)
+x,y = np.meshgrid(x,y)
+r = np.sqrt(x**2 + y**2)
+Z = np.sin(r)
+surf = ax.plot_surface(x,y,Z, rstride=1,cstride=1, cmap=cm.jet, linewidth=0,antialiased=False)
+
+ax.set_zlim(-1.01, 1.01)
+ax.zaxis.set_major_locator(LinearLocator(10))
+ax.zaxis.set_major_formatter(FormatStrFormatter('%.02f'))
+fg.colorbar(surf, shrink=0.5, aspect=5)
+plt.show()
+
 
