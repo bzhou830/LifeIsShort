@@ -9,7 +9,11 @@
 ---
 
 ## 02. plot.py
-matplot绘制折线图，柱状图，饼状图的demo
+matplot绘制折线图，柱状图，饼状图的demo。
+需要安装matplotlib,ubuntu下使用下述命令安装。
+```
+sudo apt-get install python-matplotlib
+```
 
 ---
 
