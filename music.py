@@ -10,7 +10,7 @@ import urllib2
 import urllib
 import re
 
-mv_id = '2278607'   # 这里输入mv的id，即http://v.yinyuetai.com/video/2275893最后的数字
+mv_id = '2275893'   # 这里输入mv的id，即http://v.yinyuetai.com/video/2275893最后的数字
 
 url = "http://www.yinyuetai.com/insite/get-video-info?flex=true&videoId=" + mv_id 
 timeout = 30
