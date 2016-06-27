@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 # coding=utf-8
 
-
 import urllib
 import urllib2
 import re
@@ -81,7 +80,7 @@ class Spider:
 
 
     def mkdir(self,path):
-        path = path.strip() # 判断路径是否存在 # 存在     True # 不存在   False 
+        path = path.strip() # 判断路径是否存在 
         isExists=os.path.exists(path) # 判断结果 
         if not isExists: # 如果不存在则创建目录 
             print u"偷偷新建了名字叫做",path,u'的文件夹' # 创建目录操作函数 
@@ -111,7 +110,6 @@ class Spider:
         for i in range(start,end+1): 
             print u"正在偷偷寻找第",i,u"个地方，看看MM们在不在" 
 	    self.savePageInfo(i) 
-
 
 
 spider=Spider()
