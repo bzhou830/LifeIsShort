@@ -1,6 +1,6 @@
 
 #Python小应用
-``
+
 ---
 
 ## 01. music.py
@@ -16,8 +16,6 @@ sudo apt-get install python-matplotlib
 ```
 还有很多很好的绘图可以访问:
 http://matplotlib.org/gallery.html
-
-
 
 
 ## 03. csdn.py
