@@ -30,9 +30,9 @@ findList = re.findall(pattern,html)     # 找到mv所有版本的下载链接
 
 if len(findList) >= 3: 
     print '>=3'
-    mvurl = findList[2]     # 含有流畅、高清、超清三个版本时下载超清
+    mvurl = findList[2]                 # 含有流畅、高清、超清三个版本时下载超清
 else:
-    mvurl = findList[0]     # 版本少时下载流畅视频
+    mvurl = findList[0]                 # 版本少时下载流畅视频
     
 local = 'MV.flv'
 
