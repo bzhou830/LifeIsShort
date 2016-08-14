@@ -7,7 +7,6 @@ from matplotlib.ticker import LinearLocator, FormatStrFormatter
 import numpy as np
 import matplotlib.pyplot as plt
 
-
 '''
 xData = np.arange(0, 10, 1)
 yData1 = xData.__pow__(2.0)
@@ -39,8 +38,6 @@ plt.axes(aspect=1)
 plt.title('Plot 3', size=14)
 plt.pie(data, labels=('Group 1', 'Group 2', 'Group 3', 'Group 4', 'Group 5'))
 plt.savefig('plot3.png', format='png')
-
-
 
 fg = plt.figure()
 ax = fg.gca(projection='3d')
